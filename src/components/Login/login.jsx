@@ -37,7 +37,7 @@ export default function Login() {
                 <div className="form-container">
                     <div className="branding">
                         <img src={book} alt="book-logo" className="book-logo" />
-                        <h3 className="app-name">StudyBuddy</h3>
+                        <h3 className="app-name">StudySensei</h3>
                     </div>
                     <h1 className="title">{isLogin ? "Login" : "Signup"}</h1>
                     <p className="subtitle">{isLogin ? "Welcome back!" : "Create your account"}</p>
