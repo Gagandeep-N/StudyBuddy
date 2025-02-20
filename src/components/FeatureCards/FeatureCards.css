@@ -1,0 +1,28 @@
+.feature-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #666;
+}
