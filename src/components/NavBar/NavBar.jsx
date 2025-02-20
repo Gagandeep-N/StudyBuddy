@@ -4,7 +4,7 @@ export default function NavBar() {
     return (
         <div className="nav-container">
             <div className="logo-brand">
-                <img src={book} className='logo'/>
+                <img src={book} className='logo-book'/>
                 <h3 className='app-name'>StudySensei</h3>
             </div>
             <div className="nav-options">

@@ -1,13 +1,13 @@
 import Login from './components/Login/login';
 import PopUp from './components/PopUp/PopUp';
-import NavBar from './components/NavBar/NavBar';
+import LandingPage from './components/LandingPage/LandingPage';
 
 function App() {
   return (
     <div className="App">
       {/* <Login/> */}
       {/* <PopUp/> */}
-      <NavBar />
+      <LandingPage/>
     </div>
   );
 }

@@ -1,0 +1,127 @@
+.container-landing {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero-container {
+    display: flex;
+    gap: 1rem;
+    background-color: #f0f4f8;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.get-started-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    background-color: #0070f3;
+    color: #ffffff;
+}
+
+.features-title, .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.feature-grid, .about-grid {
+    display: flex;
+    gap: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    gap: 2rem;;
+}
+
+.get-started-now-ctn {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+.get-started-now-btn{
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    background-color: #0070f3;
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 2rem;
+    background-color: #f0f4f8;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.copyright {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+.footer-link {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+}
+  
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .feature-grid, .about-grid {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
