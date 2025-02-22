@@ -21,7 +21,7 @@ export default function Login() {
             } else {
                 userCredential  = await registerUser(email, password);
             }
-            console.log("User Credential:", userCredential); // Debugging Step
+            console.log("User Credential:", userCredential);
 
             dispatch(setUser({ id: userCredential.uid, email: userCredential.email }));
             setEmail("");
