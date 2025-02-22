@@ -1,14 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/Login/login';
 import PopUp from './components/PopUp/PopUp';
 import LandingPage from './components/LandingPage/LandingPage';
 
 function App() {
   return (
-    <div className="App">
-      {/* <Login/> */}
-      {/* <PopUp/> */}
-      <LandingPage/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/popup" element={<PopUp />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

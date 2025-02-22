@@ -4,6 +4,7 @@ import book from "../../assets/book.png";
 import { loginUser, registerUser } from "../../services/authService";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../features/auth/authSlice";
+import { Link } from "react-router-dom";
 
 export default function Login() {
     const [isLogin, setIsLogin] = useState(true);
@@ -68,7 +69,7 @@ export default function Login() {
                         <button onClick={() => setIsLogin(!isLogin)} className="toggle-button">
                             {isLogin ? "Need an account? Sign Up" : "Already have an account? Login"}
                         </button>
-                        <a href="#">Back to Home</a>  {/*we will create a Link here after we set routers*/}
+                        <Link to="/" className="back">Back to Home</Link> 
                     </form>
                 </div>
             </div>
