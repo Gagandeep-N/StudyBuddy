@@ -1,10 +1,19 @@
-import { useSelector } from "react-redux";
 import book from "../../assets/book.png";
 import "./DashboardNav.css";
 
-export default function DashboardNav() {
+export default function DashboardNav({
+    profile,
+    setTitle,
+}) {
 
-    const userMail = useSelector((state) => state.user);  // TODO: need to integrate redux in profile
+    const handleNotes = () => {
+        setTitle("My Notes");
+    }
+
+    const handleTests = () => {
+        setTitle("My Tests");
+    }
+
     return (
         <div className="dashboard-nav">
             <div className="logo-brand">
@@ -13,10 +22,16 @@ export default function DashboardNav() {
             </div>
 
             <div className="options-buttons">
-                <button className="notes-btn">
+                <button
+                    className="notes-btn"
+                    onClick={handleNotes}
+                >
                     Notes
                 </button>
-                <button className="test-btn">
+                <button
+                    className="test-btn"
+                    onClick={handleTests}
+                >
                     Tests
                 </button>
 
@@ -24,7 +39,7 @@ export default function DashboardNav() {
 
             <div className="profile-logout">
                 <h3 className="profile-name">
-                    Profile
+                    {profile}
                 </h3>
                 <button className="logout-btn">
                     Logout
