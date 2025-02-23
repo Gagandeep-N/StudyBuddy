@@ -2,6 +2,7 @@ import NavBar from "../NavBar/NavBar";
 import "./LandingPage.css";
 import Features from "../Features/Features";
 import Guide from "../Guide/Guide";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
     return (
@@ -15,9 +16,9 @@ export default function LandingPage() {
                     <div className="hero-content">
                         <h1 className="hero-title">Take Notes, Create Tests, Excel in Your Studies</h1>
                         <p className="hero-text">StudySensei helps you organize your notes and create custom tests to boost your learning experience.</p>
-                        <button className="get-started-btn">
+                        <Link className="get-started-btn" to="/login">
                             Get Started
-                        </button>
+                        </Link>
                     </div>
                 </section>
 

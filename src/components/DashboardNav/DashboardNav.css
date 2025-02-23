@@ -10,6 +10,11 @@
     overflow: hidden;
 }
 
+.logo-brand {
+   display: flex;
+   justify-content: flex-start;
+}
+
 .options-buttons {
     display: flex;
     flex-direction: column;
@@ -61,6 +66,7 @@
     font-size: 1rem;
     color: #333;
     padding-left: 1rem;
+    display: flex;
     margin-bottom: 0;
 }
 
@@ -83,4 +89,10 @@
 .logout-btn:active{
     background-color: #0070f3;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .dashboard-nav {
+        display: fixed;
+    }
 }

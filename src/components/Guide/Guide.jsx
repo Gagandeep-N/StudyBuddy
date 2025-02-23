@@ -3,6 +3,7 @@ import signUp from "../../assets/add-user.png";
 import book from "../../assets/book.png";
 import exam from "../../assets/exam.png";
 import "./Guide.css";
+import { Link } from "react-router-dom";
 export default function Guide() {
     return (
         <div className="about-content">
@@ -25,9 +26,9 @@ export default function Guide() {
                 />
             </div>
             <div className="get-started-now-ctn">
-                <button className="get-started-now-btn">
+                <Link className="get-started-now-btn" to="/login">
                     Get Started Now
-                </button>
+                </Link>
             </div>
         </div>
     );
